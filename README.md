@@ -72,11 +72,28 @@ I suggest using Jenv project to setup Java JDK
 
 - https://www.jenv.be/
 
+```bash
+brew install jenv
+
+brew tap AdoptOpenJDK/openjdk
+brew install --cask adoptopenjdk12
+brew install --cask adoptopenjdk8
+```
+
 Use `~/.extra` to complete Jenv setup:
 
 ```bash
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+```
+
+Restart your terminal to pick up the change.
+
+The next step is to add our Java versions to jenv:
+
+```bash
+$ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+$ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/
 ```
 
 
