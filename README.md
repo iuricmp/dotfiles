@@ -66,6 +66,20 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
 
+### Java JDK
+
+I suggest using Jenv project to setup Java JDK
+
+- https://www.jenv.be/
+
+Use `~/.extra` to complete Jenv setup:
+
+```bash
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+```
+
+
 ### Sensible macOS defaults
 
 When setting up a new Mac, you may want to set some sensible macOS defaults:
