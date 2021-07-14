@@ -5,7 +5,9 @@ Mathias’s dotfiles Fork
 
 ## Requirements
 
-- [jenv](https://www.jenv.be/)
+- install [jenv](https://www.jenv.be/)
+- expose JAVA_HOME:
+	-  ```jenv enable-plugin export```
 
 ## Installation
 
