@@ -3,12 +3,6 @@ Mathias’s dotfiles Fork
 
 ![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
 
-## Requirements
-
-- install [jenv](https://www.jenv.be/)
-- expose JAVA_HOME:
-	-  ```jenv enable-plugin export```
-
 ## Installation
 
 **Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
@@ -92,6 +86,10 @@ Use `~/.extra` to complete Jenv setup:
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 ```
+
+Expose JAVA_HOME run:
+
+```jenv enable-plugin export```
 
 Restart your terminal to pick up the change.
 
