@@ -103,6 +103,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
+eval "$(rbenv init -)"
+
 # nvm setup, after `brew install nvm`
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
