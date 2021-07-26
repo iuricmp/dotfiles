@@ -110,6 +110,10 @@ eval "$(rbenv init -)"
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin/"
 
+# Add maven
+export MAVEN_HOME="$HOME/apache-maven-3.6.3"
+export PATH="$PATH:$MAVEN_HOME/bin"
+
 # Add nvm setup, after `brew install nvm`
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
