@@ -101,21 +101,25 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Add jenv
-export PATH="$HOME/.jenv/bin:$PATH"
+PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 # Add rbenv
 eval "$(rbenv init -)"
 
 # Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin/"
+PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin/"
 
 # Add maven
 export MAVEN_HOME="$HOME/apache-maven-3.6.3"
-export PATH="$PATH:$MAVEN_HOME/bin"
+PATH="$PATH:$MAVEN_HOME/bin"
 
 # Add nvm setup, after `brew install nvm`
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+# Android
+ANDROID_HOME="~/Library/Android/sdk/platform-tools"
+
+export PATH=${PATH}:${ANDROID_HOME}
