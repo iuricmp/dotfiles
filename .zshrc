@@ -120,6 +120,6 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Android
-ANDROID_HOME="~/Library/Android/sdk/platform-tools"
-
-export PATH=${PATH}:${ANDROID_HOME}
+export ANDROID_HOME="~/Library/Android/sdk"
+alias adb="$ANDROID_HOME/platform-tools/adb"
+export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
