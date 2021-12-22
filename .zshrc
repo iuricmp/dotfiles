@@ -123,3 +123,7 @@ export NVM_DIR="$HOME/.nvm"
 export ANDROID_HOME="~/Library/Android/sdk"
 alias adb="$ANDROID_HOME/platform-tools/adb"
 export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
+
+
+source <(kubectl completion zsh)
+
