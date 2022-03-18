@@ -120,7 +120,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Add yarn
-PATH="$PATH:$(yarn global bin)"
+PATH="$(yarn global bin):$PATH"
 
 # Android
 export ANDROID_HOME="~/Library/Android/sdk"
