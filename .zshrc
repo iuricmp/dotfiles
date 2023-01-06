@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history zsh-autosuggestions)
+plugins=(git history)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,7 +120,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Add yarn
-PATH="$(yarn global bin):$PATH"
+# PATH="$(yarn global bin):$PATH"
+
+# Python
+PATH="$(which python):$PATH"
 
 # Android
 export ANDROID_HOME="~/Library/Android/sdk"
